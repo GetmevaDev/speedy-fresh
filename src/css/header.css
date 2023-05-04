@@ -22,6 +22,7 @@
 .nav__item {
   margin-left: 38px;
 }
+
 .nav__link::after {
   content: "";
   width: 20px;
@@ -85,6 +86,9 @@
   letter-spacing: -0.274286px;
 
   color: #000000;
+}
+.parent-item:hover .child-link {
+  display: block;
 }
 .child-link {
   display: none;
