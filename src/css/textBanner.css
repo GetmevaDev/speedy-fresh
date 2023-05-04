@@ -1,0 +1,67 @@
+
+/* textBanner start */
+.textBanner {
+  background: #0f0f0f;
+  margin: 100px 0 50px;
+  border-radius: 30px;
+  padding: 50px 60px;
+}
+.textBanner h4 {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+
+  color: #ffffff;
+}
+/* textBanner end */
+
+
+.getInTouch {
+  background-color: #0F0F0F;
+  margin: 50px 0;
+  border-radius: 30px;
+  padding: 50px 60px;
+}
+
+.getInTouch h3 {
+  text-align:center;
+   margin-bottom:10px;
+}
+.getInTouch p {
+  text-align:center;
+   
+}
+
+@media(max-width:1024px) {
+  .getInTouch {
+    margin: 10px 0;
+    padding: 30px 40px;
+  }
+  
+}
+@media(max-width:769px) {
+  .textBanner {
+    margin: 60px 0 50px;
+    padding: 26px 32px;
+}
+.textBanner h4 {
+  font-size: 20px;
+}
+  
+}
+@media(max-width:500px) {
+  .getInTouch {
+    margin: 20px 0;
+    padding: 20px 30px;
+  }
+
+  .textBanner {
+    margin: 50px 0 40px;
+    padding: 20px 25px;
+}
+.textBanner h4 {
+  font-size: 16px;
+}
+  
+}

@@ -1,17 +1,72 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import { RouterProvider, createBrowserRouter} from "react-router-dom";
+import { createRoot } from 'react-dom/client';
+
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import About from './pages/About';
+import Error from "./components/Error";
+import Home from "./pages/Home";
+import SelfService from "./pages/SelfService";
+import WashFold from "./pages/WashFold";
+import PickupAndDelivery from "./pages/PickupAndDelivery";
+import CommercialLaundry from "./pages/CommercialLaundry";
+import Pricing from "./pages/Pricing";
+import ContactUs from "./pages/ContactUs";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const appRouter = createBrowserRouter([
+  {
+    path:"/",
+    element: <App/>,
+    errorElement: <Error />,
+    children: [
+      
+      {
+        path:"/",
+        element: <Home/>
+    
+      },
+      {
+        path:"/about",
+        element: <About/>
+    
+      },
+      {
+        path:"/self-service",
+        element: <SelfService />
+    
+      },
+      {
+        path:"/wash-fold",
+        element: <WashFold />
+    
+      },
+      {
+        path:"/pickup-and-delivery",
+        element: <PickupAndDelivery />
+    
+      },
+      {
+        path:"/commercial-laundry",
+        element: <CommercialLaundry />
+    
+      },
+      {
+        path:"/pricing",
+        element: <Pricing />
+    
+      },
+      {
+        path:"/contact",
+        element: <ContactUs />
+    
+      },
+    ]
+
+  }
+])
+
+
+const root = createRoot(document.getElementById('root'));
+root.render(<RouterProvider router={appRouter}/>);
+
