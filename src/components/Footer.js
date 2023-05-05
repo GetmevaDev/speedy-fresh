@@ -11,17 +11,17 @@ function Footer() {
         <li className="nav__item">
           <NavLink className="nav__link" to="/">
             Home
-          </NavLink>{" "}
+          </NavLink>
         </li>
         <li className="nav__item">
           <NavLink className="nav__link" to="/about">
             About Us
-          </NavLink>{" "}
+          </NavLink>
         </li>
         <li className="nav__item">
           <NavLink className="nav__link" to="/self-service">
             Self Service
-          </NavLink>{" "}
+          </NavLink>
         </li>
         <li className="nav__item">
           <NavLink className="nav__link" to="/wash-fold">

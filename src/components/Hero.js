@@ -11,7 +11,7 @@ function Hero({title, subtitle, image}) {
         {subtitle && <h4>{subtitle}</h4>}
         <div className="hero__cta">
           <a href="#!" className="btn btn--primary">Schedule a Pickup</a>
-          <a href="tel:+7184900334" className="btn btn--secondary">Click to call</a>
+          <a href="tel:(718)4900334" className="btn btn--secondary">Click to call</a>
         </div>
       </div>
       <div className="hero__image">

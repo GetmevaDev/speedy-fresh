@@ -26,7 +26,8 @@ function Map() {
     <div className="container">
       <div className="map-container">
         <MapContent />
-      <iframe title="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3026.805194738497!2d-73.91425819999999!3d40.6562244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25c8d6173b9c1%3A0xde54b1d45f9dfa2a!2zOTcwMiBDaHVyY2ggQXZlLCBCcm9va2x5biwgTlkgMTEyMTIsINCh0KjQkA!5e0!3m2!1sru!2s!4v1682618533750!5m2!1sru!2s" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+     
+      <iframe title="map"  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12107.220778953988!2d-73.9142582!3d40.6562244!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25d2e957c05d9%3A0x86891cde58c51c79!2sSpeedy%20Fresh%20Laundromat!5e0!3m2!1sru!2s!4v1683309927753!5m2!1sru!2s"  allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
   )
