@@ -27,7 +27,7 @@ function Map() {
       <div className="map-container">
         <MapContent />
      
-      <iframe title="map"  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12107.220778953988!2d-73.9142582!3d40.6562244!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25d2e957c05d9%3A0x86891cde58c51c79!2sSpeedy%20Fresh%20Laundromat!5e0!3m2!1sru!2s!4v1683309927753!5m2!1sru!2s"  allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+      <iframe title = "map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3026.837996159985!2d-73.9167836!3d40.6555014!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25d2e957c05d9%3A0x86891cde58c51c79!2sSpeedy%20Fresh%20Laundromat!5e0!3m2!1sen!2s!4v1683313226793!5m2!1sen!2s"  allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
   )
