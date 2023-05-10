@@ -1,24 +1,32 @@
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom"
 import Logo from "../images/logo.svg"
 import arrow_down from "../images/arrow-down.svg"
 import "../css/header.css"
 import Burger from "../components/Burger"
-
+import { useDispatch } from "react-redux";
+import { getCurrentUrlName, getPrevUrlName } from "../utils/prevPage";
 
 
 function Header() {
-  
-  
+  const dispatch = useDispatch()
+  const [url, setUrl] = useState('Home')
+  function getUrl(e) {
+    dispatch(getCurrentUrlName(e.target.textContent))
+    setUrl(e.target.textContent)
+    dispatch(getPrevUrlName(url))
+  }
 
-  function closeChildLink() {
+  function closeChildLink(e) {
     
     document.querySelector(".child-link").classList.remove("db")
     document.querySelector(".parent-link").classList.add("active")
     
-        
+        getUrl(e)
   }
 
   return (
+    <header>
     <div className="container navbar">
       <div className="logo">
       <NavLink to="/" className="logo__link">
@@ -28,20 +36,20 @@ function Header() {
       </div>
      
      <ul className="nav">
-      <li className="nav__item"><NavLink className="nav__link" to="/">Home</NavLink> </li>
-      <li className="nav__item"><NavLink className="nav__link" to="/about">About Us</NavLink> </li>
-      <li className="nav__item"><NavLink className="nav__link" to="/self-service">Self Service</NavLink> </li>
-      <li className="nav__item"><NavLink className="nav__link" to="/wash-fold">Wash & Fold</NavLink> </li>
-      <li  className="nav__item parent-item"><NavLink  className="nav__link parent-link" to="/pickup-and-delivery">
+      <li className="nav__item"><NavLink onClick={getUrl} className="nav__link" to="/">Home</NavLink> </li>
+      <li className="nav__item"><NavLink onClick={getUrl} className="nav__link" to="/about">About Us</NavLink> </li>
+      <li className="nav__item"><NavLink onClick={getUrl} className="nav__link" to="/self-service">Self Service</NavLink> </li>
+      <li className="nav__item"><NavLink onClick={getUrl} className="nav__link" to="/wash-fold">Wash & Fold</NavLink> </li>
+      <li  className="nav__item parent-item"><NavLink onClick={getUrl}  className="nav__link parent-link" to="/pickup-and-delivery">
         Pickup & Delivery     
       </NavLink>
         <img  className="arrow_down" src={arrow_down} alt="arrow down" />
         <ul className="child-link">
-          <li className="nav__item"><NavLink onClick={closeChildLink}  className="nav__link" to="/commercial-laundry">Commercial Laundry Services</NavLink></li>
+          <li className="nav__item"><NavLink onClick = { closeChildLink }   className="nav__link" to="/commercial-laundry">Commercial Laundry Services</NavLink></li>
         </ul>
        </li>
-      {/* <li className="nav__item"><NavLink className="nav__link" to="/pricing">Pricing</NavLink></li> */}
-      <li className="nav__item"><NavLink className="nav__link" to="/contact">Contact us</NavLink></li>
+      <li className="nav__item"><NavLink onClick={getUrl} className="nav__link" to="/pricing">Pricing</NavLink></li>
+      <li className="nav__item"><NavLink onClick={getUrl} className="nav__link" to="/contact">Contact us</NavLink></li>
 
       
      </ul>
@@ -59,12 +67,13 @@ function Header() {
       <li className="nav__item"><NavLink   className="nav__link nav__link--mobile" to="/commercial-laundry">Commercial Laundry Services</NavLink></li>
        
       
-      {/* <li className="nav__item"><NavLink className="nav__link nav__link--mobile" to="/pricing">Pricing</NavLink></li> */}
+      <li className="nav__item"><NavLink className="nav__link nav__link--mobile" to="/pricing">Pricing</NavLink></li>
       <li className="nav__item"><NavLink className="nav__link nav__link--mobile" to="/contact">Contact us</NavLink></li>
 
       
      </ul>
     </div>
+    </header>
   )
 
 } 

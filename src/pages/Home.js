@@ -1,3 +1,5 @@
+import React from "react";
+import "../css/home.css"
 import Address from "../components/Address";
 import Benefits from "../components/Benefits";
 import Hero from "../components/Hero";
@@ -7,7 +9,7 @@ import hero_img from "../images/washing-machines-laundromat.jpg";
 
 function Home() {
   return (
-    <div>
+    <div className="home">
       <Hero
         title="Fresh & Clean Laundry Solutions"
         subtitle="Exceptional Service for Your Everyday Needs"

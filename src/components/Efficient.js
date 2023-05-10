@@ -1,3 +1,4 @@
+import React from "react";
 import RoundIcon from "./RoundIcon";
 import "../css/efficient.css";
 import efficient1 from "../images/efficient1.png";

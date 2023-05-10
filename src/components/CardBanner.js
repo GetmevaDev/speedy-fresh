@@ -1,3 +1,4 @@
+import React from "react";
 import "../css/cardBanner.css";
 
 function CardBanner({ img, title, paragraph, reverse, listArr }) {

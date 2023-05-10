@@ -1,4 +1,5 @@
 import "../css/bannerWithText.css"
+import React from "react";
 
 function BannerWithText({title, subtitle, img}) {
   return (

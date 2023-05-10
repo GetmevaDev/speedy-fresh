@@ -1,3 +1,4 @@
+import React from "react";
 import { Link } from "react-router-dom"
 import "../css/homePriceBanner.css"
 import BannerImg from "../images/mother-with-daughter.jpg"

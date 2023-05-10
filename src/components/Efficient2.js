@@ -1,3 +1,4 @@
+import React from "react";
 import RoundIcon from "./RoundIcon"
 import "../css/efficient.css"
 import eff1 from "../images/eff1.png"

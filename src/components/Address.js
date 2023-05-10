@@ -1,3 +1,6 @@
+
+import React from "react";
+
 import "../css/address.css";
 import address from "../images/icon-address.svg";
 import hours from "../images/icon-hours.svg";
@@ -18,9 +21,9 @@ function Address() {
         <AddressCard
           img={address}
           title="Address"
-          subtitle="9702 Church ave, Brooklyn, NY"
+          subtitle="9702 Church Avenue, Brooklyn, NY"
         />
-        <AddressCard img={hours} title="Opening Hours" subtitle="24/7" />
+        <AddressCard img={hours} title="Opening Hours" subtitle="Mon - Sun:  6:00 AM - 10:00 PM" />
         <AddressCard
           img={call}
           title="Have a question?"

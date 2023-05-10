@@ -1,0 +1,209 @@
+.pricing .aboutBanner {
+  margin-top: 62px;
+}
+.pricing h3 {
+  text-align: center;
+}
+.loundryService,
+.loundryPrice,
+.loundryServiceBrooklyn p {
+  text-align: center;
+  margin: 30px 0 50px;
+}
+.loundryService {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.loundryService h3 {
+  margin-bottom: 100px;
+}
+
+.loundryService__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 30px;
+}
+.loundryPrice h3 {
+  width: 100%;
+  margin: 100px auto 30px;
+}
+.pricing h4 {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: -0.2px;
+
+  color: #ffffff;
+}
+
+.loundryPrice__grid {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 0 20px;
+
+  margin-bottom: 50px;
+}
+.loundryPrice li {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 56px;
+  /* or 224% */
+
+  text-align: center;
+  letter-spacing: -0.2px;
+
+  color: #adadad;
+  list-style: disc;
+}
+.loundryPrice ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.brands__grid {
+  margin-top: 70px;
+  margin-bottom: 131px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0 78px;
+  align-items: center;
+  justify-content: center;
+}
+.brands__grid img {
+  width: 100%;
+}
+.loundryServiceBrooklyn {
+  margin-bottom: 100px;
+}
+.loundryServiceBrooklyn__grid {
+  background: #0f0f0f;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.loundryServiceBrooklyn h5 {
+  margin-top: 30px;
+  padding-left: 30px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 56px;
+  letter-spacing: -0.2px;
+
+  color: #ffffff;
+}
+
+.loundryServiceBrooklyn li {
+  list-style: disc;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 25px;
+  letter-spacing: -0.2px;
+
+  color: #adadad;
+  margin-bottom: 20px;
+}
+.loundryServiceBrooklyn__grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.loundryServiceBrooklyn__grid .loundryServiceBrooklyn__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  border-left: 1px solid #252525;
+}
+.loundryServiceBrooklyn__card h5:nth-of-type(1) {
+  border-bottom: 1px solid #252525;
+}
+.loundryServiceBrooklyn__card h5:nth-of-type(2) {
+  border-top: 1px solid #252525;
+}
+.loundryServiceBrooklyn__grid ul {
+  padding: 30px 30px 0;
+  
+}
+
+.drayerPricing__grid {
+  margin-top: 50px;
+  background-color: #0f0f0f;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.drayerPricing__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.drayerPricing__card:nth-of-type(1) {
+  border-right: 1px solid #252525;
+}
+.drayerPricing__card h5 {
+  width: 100%;
+  padding: 30px 0;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 56px;
+  text-align: center;
+  letter-spacing: -0.2px;
+
+  color: #ffffff;
+}
+.drayerPricing__card img {
+  margin-bottom: 30px;
+}
+.drayerPricing__card h5:nth-of-type(1) {
+  border-bottom: 1px solid #252525;
+}
+.drayerPricing__card h5:nth-of-type(2) {
+  border-top: 1px solid #252525;
+}
+
+@media(max-width:1024px) {
+  .loundryPrice__grid  {
+    flex-wrap: wrap;
+    gap: 20px ;
+  }
+}
+@media(max-width:1000px) {
+  .loundryServiceBrooklyn__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px 0;
+}
+}
+
+@media (max-width: 768px) {
+  .loundryService__grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 70px 0;
+  }
+  .loundryPrice ul {
+    padding: 0 15px;
+  }
+  .loundryPrice li {
+    line-height: 40px;
+  }
+
+  .brands__grid {
+    margin-bottom: 100px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px 78px;
+}
+.loundryServiceBrooklyn__grid {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px 0;
+}
+
+.drayerPricing__grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px 0;
+}
+}

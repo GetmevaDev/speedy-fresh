@@ -1,6 +1,15 @@
-// import { useLocation } from "react-router-dom";
+import React from "react";
+import {  useNavigate} from "react-router-dom";
 import "../css/hero.css";
+import { useSelector } from "react-redux";
+
+
 function Hero({title, subtitle, image}) {
+  const navigate = useNavigate()
+  const currentPage = useSelector(store=> store.getLocation.name)
+  const prevPage = useSelector(store=> store.getLocation.prevName)
+  
+
 
   return (
     <div className="container ">
@@ -19,10 +28,11 @@ function Hero({title, subtitle, image}) {
       </div>
       </div>
 
-      {/* <div className="breadcrumbs">
-        <p className="previous">Home</p>
-        <p className="current">Contact</p>
-      </div> */}
+
+      <div className="breadcrumbs">
+        <p className="previous" onClick={()=>{navigate(-1)}}>{prevPage}</p>
+        <p className="current">» {currentPage}</p>
+      </div>
     </div>
   );
 }

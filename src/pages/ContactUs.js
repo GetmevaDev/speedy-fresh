@@ -1,3 +1,5 @@
+import React from "react";
+
 import Hero from "../components/Hero";
 import "../css/map.css"
 import hero_img from "../images/girl-with-smartphone-laundry.jpg";

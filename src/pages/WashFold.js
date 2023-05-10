@@ -1,3 +1,5 @@
+import React from "react";
+
 import CardBanner from "../components/CardBanner";
 import Hero from "../components/Hero";
 import WashCard from "../components/WashCard";

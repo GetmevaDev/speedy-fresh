@@ -1,3 +1,4 @@
+import React from "react";
 import { NavLink } from "react-router-dom";
 import RGM from "../images/RGM.svg";
 import "../css/footer.css";
@@ -6,7 +7,7 @@ import "../css/footer.css";
 function Footer() {
 
   return (
-    <div className="footer">
+    <footer className="footer">
       <ul className="footer__nav">
         <li className="nav__item">
           <NavLink className="nav__link" to="/">
@@ -38,11 +39,11 @@ function Footer() {
             Commercial Loundry
           </NavLink>
         </li>
-        {/* <li className="nav__item">
+        <li className="nav__item">
           <NavLink className="nav__link" to="/pricing">
             Pricing
           </NavLink>
-        </li> */}
+        </li>
         <li className="nav__item">
           <NavLink className="nav__link" to="/contact">
             Contact us
@@ -57,12 +58,12 @@ function Footer() {
         </p>
         <div className="footer__logo">
           <img src={RGM} alt="rgm" />
-          <p>Web Design & Digital Marketing by <span className="rgm">Robert Gerov Media</span> </p>
+          <p>Web Design & Digital Marketing by <a href="https://robertgerov.com/" className="rgm">Robert Gerov Media</a> </p>
         </div>
         </div>
 
       </div>
-    </div>
+    </footer>
   );
 }
 

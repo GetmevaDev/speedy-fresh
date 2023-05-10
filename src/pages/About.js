@@ -1,3 +1,5 @@
+import React from "react";
+
 import CardBanner from "../components/CardBanner";
 import GetInTouch from "../components/GetInTouch";
 import Hero from "../components/Hero";

@@ -1,3 +1,5 @@
+import React from "react";
+
 import "../css/benefits.css";
 import washingMachine1 from "../images/washing-machine1.png";
 import washingMachine2 from "../images/washing-machine2.png";

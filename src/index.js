@@ -1,5 +1,8 @@
+import React from "react";
+
 import { RouterProvider, createBrowserRouter} from "react-router-dom";
 import { createRoot } from 'react-dom/client';
+// import { Provider } from "react-redux";
 
 import './index.css';
 import App from './App';
@@ -12,7 +15,8 @@ import PickupAndDelivery from "./pages/PickupAndDelivery";
 import CommercialLaundry from "./pages/CommercialLaundry";
 import Pricing from "./pages/Pricing";
 import ContactUs from "./pages/ContactUs";
-
+import { Provider } from "react-redux";
+import store from "./utils/store";
 
 const appRouter = createBrowserRouter([
   {
@@ -68,5 +72,5 @@ const appRouter = createBrowserRouter([
 
 
 const root = createRoot(document.getElementById('root'));
-root.render(<RouterProvider router={appRouter}/>);
+root.render(<Provider store={store}> <RouterProvider router={appRouter}/> </Provider>);
 

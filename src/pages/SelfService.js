@@ -1,3 +1,5 @@
+import React from "react";
+import "../css/selfService.css"
 import BannerWithText from "../components/BannerWithText";
 import Hero from "../components/Hero";
 import hero_img from "../images/public-laundry-with-washing.jpg";
@@ -13,7 +15,7 @@ import Dryers from "../components/Dryers";
 
 function SelfService() {
   return (
-    <div>
+    <section className="selfService">
       <Hero
         title="Brooklyn’s Premier  Laundromat"
         subtitle="Drop-Off – Self-Service"
@@ -31,7 +33,7 @@ function SelfService() {
       <CardBanner
         img={img}
         title="High Extract"
-        paragraph="Compared to most other laundromats, our dryers remove more water from your garments. Clothing comes out moist rather than saturated, which reduces drying time by up to 25%."
+        paragraph="Compared to most other laundromats, our dryers remove more water from your garments. Clothing comes out fresh rather than saturated, which reduces drying time by up to 25%."
       />
 
       <Efficient2 />
@@ -41,7 +43,7 @@ function SelfService() {
         img={banner2}
         title="Expandable Clothing Really Soiled? Engage in SuperWash!"
       />
-    </div>
+    </section>
   );
 }
 

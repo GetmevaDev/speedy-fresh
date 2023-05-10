@@ -1,3 +1,4 @@
+import React from "react";
 import "../css/map.css"
 import address from "../images/icon-address.svg";
 import hours from "../images/icon-hours.svg";
@@ -8,7 +9,7 @@ function MapContent() {
       <h4>Contact Us</h4>
       <div className="mapContent__text">
         <img  src={address} alt="address"/>
-        <span>9702 Church ave, Brooklyn, NY</span>
+        <span>9702 Church Avenue, Brooklyn, NY</span>
       </div>
       <div className="mapContent__text">
         <img  src={call} alt="call"/>
@@ -16,7 +17,7 @@ function MapContent() {
       </div>
       <div className="mapContent__text">
         <img  src={hours} alt="hours"/>
-        <span>Store Hours <b>24/7</b> </span>
+        <span>Store Hours <b>Mon - Sun: 6:00 AM - 10:00 PM</b> </span>
       </div>
     </div>
   )

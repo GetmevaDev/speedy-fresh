@@ -1,3 +1,4 @@
+import React from "react";
 import "../css/dryers.css";
 import DryersCard from "./DryersCard";
 import dryers1 from "../images/dryers1.png";

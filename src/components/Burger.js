@@ -1,4 +1,5 @@
 import "../css/burger.css";
+import React from "react";
 
 function Burger() {
   function getBurger() {
