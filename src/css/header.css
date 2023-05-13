@@ -3,6 +3,11 @@
   justify-content: space-between;
   padding-top: 20px;
 }
+.home-navbar {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
 .logo {
   width: 140.88px;
   height: 186.12px;
@@ -27,8 +32,7 @@
   content: "";
   width: 20px;
   height: 3px;
-  /* background-color: red; */
-  /* opacity: 0; */
+ 
   display: block;
 }
 .nav__link {
@@ -46,7 +50,13 @@
   color: var(--primary-color);
 }
 .navbar .active::after {
-  /* background-color: blue; */
+  content: "";
+  width: 20px;
+  height: 3px;
+  background-color: var(--primary-color);
+  display: block;
+}
+.home-navbar .active::after {
   content: "";
   width: 20px;
   height: 3px;
@@ -61,6 +71,14 @@
 
 .parent-item {
   position: relative;
+}
+.parent-item .home-arrow_down {
+  position: absolute;
+  right: -15%;
+  top: 40%;
+  cursor: pointer;
+  width: 10px;
+  height: 5px;
 }
 .parent-item .arrow_down {
   position: absolute;

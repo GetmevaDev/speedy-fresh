@@ -1,31 +1,37 @@
-import React, { useEffect } from "react"
-
+import React, { useEffect } from "react";
+import "../css/commercialLaundry.css";
 import CardBanner from "../components/CardBanner";
 import Hero from "../components/Hero";
 import TextBanner from "../components/TextBanner";
 import hero_img from "../images/grayscale-shot-washing.jpg";
 import singapure_orchard from "../images/singapore-orchard.png";
-import woman_picking from "../images/woman-picking-clothes-form-inside.png";
+import woman_picking from "../images/woman-choosing-clothes.jpg";
 import bucket_loundry from "../images/basket-laundry-near.png";
+import GetInTouch from "../components/GetInTouch";
 
 function CommercialLaundry() {
-  useEffect(()=> {
-   
+  useEffect(() => {
     return function() {
-    document.querySelector(".parent-link").classList.remove("active")
-    }
-  })
+      document.querySelector(".parent-link").classList.remove("active");
+    };
+  });
   return (
-    <div>
+    <div className="commercialLaundry">
       <Hero
         title="Commercial Laundry Services in Brooklyn, NY"
         subtitle="Reliable and Efficient Laundry Solutions for Your Business"
         image={hero_img}
       />
-
-      <CardBanner
-        img={singapure_orchard}
-        paragraph="At Speedy Fresh, we understand the unique challenges businesses face when it comes to maintaining clean, fresh linens and uniforms. Our Commercial Laundry services are designed to cater specifically to the needs of businesses, providing reliable and efficient laundry solutions that save you time, effort, and resources. From restaurants to hotels, medical facilities, and more, our experienced team ensures your business receives the professional laundry care it deserves."
+      <div className="commercialLaundry__little-banner">
+        <CardBanner
+          img={singapure_orchard}
+          paragraph="At Speedy Fresh, we understand the unique challenges businesses face when it comes to maintaining clean, fresh linens and uniforms. Our Commercial Laundry services are designed to cater specifically to the needs of businesses, providing reliable and efficient laundry solutions that save you time, effort, and resources. From restaurants to hotels, medical facilities, and more, our experienced team ensures your business receives the professional laundry care it deserves."
+        />
+      </div>
+      <GetInTouch
+        title="Customized Solutions for Your Business"
+        subtitle='Tailored Services to Meet Your Needs.'
+        text = 'Every business has its own set of requirements, and at Speedy Fresh, we strive to provide personalized laundry solutions that cater to your unique needs. Our flexible service options include pickup and delivery, various turnaround times, and customizable cleaning preferences, ensuring that your business receives the most suitable laundry service.'
       />
       <CardBanner
         img={woman_picking}
@@ -43,10 +49,10 @@ function CommercialLaundry() {
         listArr={[
           "Restaurants and Catering Services: Clean table linens, napkins, and staff uniforms",
           "Hotels and Hospitality: Fresh bed linens, towels, and other guest amenities",
-          "Medical Facilities: Hygienic laundering of scrubs, lab coats, patient gowns, and linens ", 
+          "Medical Facilities: Hygienic laundering of scrubs, lab coats, patient gowns, and linens ",
           "Salons and Spas: Immaculate towels, robes, and treatment linens",
           "Fitness Centers and Gyms: Clean and fresh towels, workout gear, and staff uniforms",
-          "Educational Institutions: Sanitized uniforms, lab coats, and other institutional laundry needs"
+          "Educational Institutions: Sanitized uniforms, lab coats, and other institutional laundry needs",
         ]}
       />
 

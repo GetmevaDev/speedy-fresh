@@ -3,11 +3,11 @@ import React from "react";
 import CardBanner from "../components/CardBanner";
 import GetInTouch from "../components/GetInTouch";
 import Hero from "../components/Hero";
-import hero_img from "../images/washing-dirty-clothes.jpg";
+import hero_img from "../images/about_hero.png";
 
 import img1 from "../images/washing-machine-bathroom.jpg";
 import img2 from "../images/washing-machines-laundromatt.jpg";
-import img3 from "../images/women-using-washing.jpg";
+import img3 from "../images/woman-using-wm.jpg";
 import img4 from "../images/public-laundry-with.jpg";
 function About() {
   return (
@@ -44,7 +44,7 @@ function About() {
 
       <GetInTouch
         title="Get in Touch"
-        text="We'd love to hear from you! If you have any questions or concerns about our services, please don't hesitate to reach out. You can call us at (718) 490-0334 or visit our facility at 9702 Church Ave., Brooklyn, NY. Our friendly staff is always available to provide assistance and ensure your laundry experience is nothing short of exceptional. Choose Speedy Fresh for a laundry service that truly cares about you and your garments."
+        text="We'd love to hear from you! If you have any questions or concerns about our services, please don't hesitate to reach out. You can call us at (718) 490-0334 or visit our facility at 9702 Church Avenue, Brooklyn, NY. Our friendly staff is always available to provide assistance and ensure your laundry experience is nothing short of exceptional. Choose Speedy Fresh for a laundry service that truly cares about you and your garments."
       />
     </div>
   );

@@ -1,4 +1,5 @@
 import React from "react";
+import '../css/pickupAndDelivery.css'
 
 import CardBanner from "../components/CardBanner";
 import Hero from "../components/Hero";
@@ -6,7 +7,7 @@ import TextBanner from "../components/TextBanner";
 import WashCard from "../components/WashCard";
 
 import hero_img from "../images/woman-uniform-standing-van.jpg";
-import smiling_girls from "../images/smiling-young-latin.png";
+import smiling_girls from "../images/smiling-man.jpg";
 import arrow_right_full from "../images/arrow-right-full.png";
 import pickup1 from "../images/pickup1.png";
 import pickup2 from "../images/pickup2.png";
@@ -14,21 +15,22 @@ import pickup3 from "../images/pickup3.png";
 import pickup4 from "../images/pickup4.png";
 import pickup5 from "../images/pickup5.png";
 import work_loundry from "../images/work-laundry.png";
-import side_view from "../images/side-view-cheerful-girl-talkin.png";
+import side_view from "../images/smiling-girl.jpg";
 
 function PickupAndDelivery() {
   return (
-    <div>
+    <div className="pickupAndDelivery">
       <Hero
         title="Convenient Pickup & Delivery Services at Speedy Fresh"
         subtitle="Experience Laundry Service Made Easy"
         image={hero_img}
       />
-
+      <div className="pickupAndDelivery__little-card">
       <CardBanner
         img={smiling_girls}
         paragraph="At Speedy Fresh, we believe that convenience is key to a stress-free laundry experience. That's why we offer seamless and reliable Pickup & Delivery services, allowing you to enjoy expertly laundered clothes without even leaving your home or office. Our flexible scheduling options and commitment to punctuality ensure that your laundry is picked up and delivered according to your preferred timeline."
       />
+      </div>
 
       {/* style for pickUpProcess is inside washCard.css */}
 

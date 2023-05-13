@@ -1,7 +1,7 @@
 import React from "react";
 import "../css/dryers.css";
 import DryersCard from "./DryersCard";
-import dryers1 from "../images/dryers1.png";
+import dryers1 from "../images/drayers1.png";
 import dryers2 from "../images/dryers2.png";
 import dryers3 from "../images/dryers3.png";
 function Dryers() {

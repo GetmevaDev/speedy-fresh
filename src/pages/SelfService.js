@@ -9,7 +9,7 @@ import banner2 from "../images/banner2.jpg";
 import Efficient from "../components/Efficient";
 import CardBanner from "../components/CardBanner";
 
-import img from "../images/women-using-washing-machine-doing.png";
+import img from "../images/woman-doing-washing-m.jpg";
 import Efficient2 from "../components/Efficient2";
 import Dryers from "../components/Dryers";
 
@@ -38,11 +38,12 @@ function SelfService() {
 
       <Efficient2 />
       
-      <Dryers />
       <BannerWithText
         img={banner2}
         title="Expandable Clothing Really Soiled? Engage in SuperWash!"
       />
+      <Dryers />
+
     </section>
   );
 }

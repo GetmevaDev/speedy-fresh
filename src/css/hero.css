@@ -10,8 +10,8 @@
 }
 
 .hero__image {
-  width: 650px;
-  height: 400px;
+  width: 750px;
+  height: 450px;
   position: absolute;
   right: 0%;
   top: 114px;
@@ -105,11 +105,11 @@
     width: 372px;
   }
   .btn--primary {
-    width: 200px;
+    width: 170px;
     height: 50px;
   }
   .btn--secondary {
-    width: 147px;
+    width: 140px;
     height: 50px;
   }
   .btn {
@@ -126,6 +126,12 @@
 }
 }
 @media (max-width: 769px) {
+  .hero__content h4 {
+    text-align: center;
+  }
+  .breadcrumbs {
+    display: none;
+  }
   .hero {
     flex-direction: column;
     align-items: center;

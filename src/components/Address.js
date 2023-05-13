@@ -17,6 +17,7 @@ function AddressCard({ img, title, subtitle }) {
 function Address() {
   return (
     <div className="container">
+      <h3 className="address__title">Visit Us Today!</h3>
       <div className="  address-wrapper ">
         <AddressCard
           img={address}

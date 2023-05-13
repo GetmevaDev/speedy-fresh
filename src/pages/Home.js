@@ -5,7 +5,8 @@ import Benefits from "../components/Benefits";
 import Hero from "../components/Hero";
 import HomePriceBanner from "../components/HomePriceBanner";
 import Map from "../components/Map";
-import hero_img from "../images/washing-machines-laundromat.jpg";
+import hero_img from "../images/logo.svg"
+
 
 function Home() {
   return (

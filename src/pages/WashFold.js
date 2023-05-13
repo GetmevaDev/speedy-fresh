@@ -6,29 +6,30 @@ import WashCard from "../components/WashCard";
 
 import "../css/washCard.css";
 
-import hero_img from "../images/asian-people-using.jpg";
-import woman_reading_book from "../images/shot-attractive-young-woman-reading.png";
+import hero_img from "../images/wash-fold-hero.png";
+import woman_reading_book from "../images/woman-using-wmm.jpg";
 import wash_process1 from "../images/wash-process1.png";
 import wash_process2 from "../images/wash-process2.png";
 import wash_process3 from "../images/wash-process3.png";
 import arrow_right_full from "../images/arrow-right-full.png";
-import close_up from "../images/close-up-shooting-with-hand.png";
+import close_up from "../images/washing-machines-laundromat.jpg";
 import process_washing from "../images/process-washing-clothes.png";
 import TextBanner from "../components/TextBanner";
 
 function WashFold() {
   return (
-    <div>
+    <div className="washAndFold">
       <Hero
         title="Wash and Fold Services at Speedy Fresh"
         subtitle="Leave Your Laundry Worries Behind"
         image={hero_img}
       />
-
+      <div className="washAndFold__little-banner">
       <CardBanner
         img={woman_reading_book}
         paragraph="At Speedy Fresh, we understand the challenges of juggling work, family, and other daily responsibilities. Our Wash and Fold service is designed to make your life easier by taking the hassle out of laundry day. Our professional team ensures your clothes are expertly washed, dried, and folded, so you can focus on the more important aspects of your life."
       />
+      </div>
 
       {/* style for washProcess is inside washCard.css */}
       <section className="washProcces container">

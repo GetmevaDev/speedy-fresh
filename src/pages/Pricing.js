@@ -1,7 +1,7 @@
 import React from "react";
 import "../css/pricing.css";
 import Hero from "../components/Hero";
-import hero_img from "../images/young-handsome-man-doing.png";
+import hero_img from "../images/young-african-american-man.jpg";
 import CardBanner from "../components/CardBanner";
 import LoundryServiceCard from "../components/LoundryServiceCard";
 import PriceCard from "../components/PriceCard";

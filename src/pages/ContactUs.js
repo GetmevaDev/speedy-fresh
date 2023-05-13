@@ -2,7 +2,7 @@ import React from "react";
 
 import Hero from "../components/Hero";
 import "../css/map.css"
-import hero_img from "../images/girl-with-smartphone-laundry.jpg";
+import hero_img from "../images/african-american-y.jpg";
 
 import address from "../images/icon-address.svg";
 import hours from "../images/icon-hours.svg";
