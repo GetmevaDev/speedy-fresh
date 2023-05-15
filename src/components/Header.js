@@ -1,21 +1,19 @@
-import React, { useState } from "react";
+import React from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import Logo from "../images/logo.svg";
 import arrow_down from "../images/arrow-down.svg";
 import "../css/header.css";
 import Burger from "../components/Burger";
 import { useDispatch } from "react-redux";
-import { getCurrentUrlName, getPrevUrlName } from "../utils/prevPage";
+import { getCurrentUrlName} from "../utils/prevPage";
 
 function Header() {
   const dispatch = useDispatch();
   const current_url = useLocation()
-  console.log(current_url.pathname);
-  const [url, setUrl] = useState("Home");
+  
   function getUrl(e) {
     dispatch(getCurrentUrlName(e.target.textContent));
-    setUrl(e.target.textContent);
-    dispatch(getPrevUrlName(url));
+
   }
 
   function closeChildLink(e) {

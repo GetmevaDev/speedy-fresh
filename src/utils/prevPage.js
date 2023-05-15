@@ -4,19 +4,16 @@ const prevPage = createSlice(
   {
     name: "getLocation",
     initialState: {
-      name:"",
-      prevName:""
+      name:"Home"
+      
     },
     reducers:{
       getCurrentUrlName: (state, action)=> {
         state.name = action.payload
-      },
-      getPrevUrlName:(state, action)=> {
-        state.prevName = action.payload
       }
     }
   }
 )
 
-export const { getCurrentUrlName, getPrevUrlName } = prevPage.actions
+export const { getCurrentUrlName } = prevPage.actions
 export default prevPage.reducer;

@@ -25,6 +25,7 @@
 
 .home .address__title {
   text-align: center;
+  margin-top: 100px;
 }
 @media (max-width: 1440px) {
   .home .hero__image {
