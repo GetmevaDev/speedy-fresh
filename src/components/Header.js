@@ -81,11 +81,11 @@ function Header() {
               </li>
             </ul>
           </li>
-          <li className="nav__item">
+          {/* <li className="nav__item">
             <NavLink onClick={getUrl} className="nav__link" to="/pricing">
               Pricing
             </NavLink>
-          </li>
+          </li> */}
           <li className="nav__item">
             <NavLink onClick={getUrl} className="nav__link" to="/contact">
               Contact us

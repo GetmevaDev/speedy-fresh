@@ -39,11 +39,11 @@ function Footer() {
             Commercial Loundry
           </NavLink>
         </li>
-        <li className="nav__item">
+        {/* <li className="nav__item">
           <NavLink className="nav__link" to="/pricing">
             Pricing
           </NavLink>
-        </li>
+        </li> */}
         <li className="nav__item">
           <NavLink className="nav__link" to="/contact">
             Contact us
