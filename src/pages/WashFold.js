@@ -15,10 +15,15 @@ import arrow_right_full from "../images/arrow-right-full.png";
 import close_up from "../images/washing-machines-laundromat.jpg";
 import process_washing from "../images/process-washing-clothes.png";
 import TextBanner from "../components/TextBanner";
+import { Helmet } from "react-helmet";
 
 function WashFold() {
   return (
     <div className="washAndFold">
+      <Helmet>
+        <title>Wash & Fold Laundry Service in Brooklyn, NY - best price</title>
+        <meta name="description" content="Brooklyn's Best Wash & Fold service at Speedy Fresh: enjoy affordable price wash and fold laundry service in Brooklyn, NY" />
+      </Helmet>
       <Hero
         title="Wash and Fold Services at Speedy Fresh"
         subtitle="Leave Your Laundry Worries Behind"

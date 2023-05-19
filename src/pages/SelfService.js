@@ -12,10 +12,15 @@ import CardBanner from "../components/CardBanner";
 import img from "../images/woman-doing-washing-m.jpg";
 import Efficient2 from "../components/Efficient2";
 import Dryers from "../components/Dryers";
+import { Helmet } from "react-helmet";
 
 function SelfService() {
   return (
     <section className="selfService">
+      <Helmet>
+        <title>Self Service Laundry in Brooklyn, NY - best price</title>
+        <meta name="description" content="Affordable cost Self Service Laundry in Brooklyn, NY: self-service laundromat with best pricing on Church Ave in Brooklyn, New York at Speedy Fresh" />
+      </Helmet>
       <Hero
         title="Brooklyn’s Premier  Laundromat"
         subtitle="Drop-Off – Self-Service"

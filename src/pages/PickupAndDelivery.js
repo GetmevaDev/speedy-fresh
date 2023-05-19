@@ -16,10 +16,15 @@ import pickup4 from "../images/pickup4.png";
 import pickup5 from "../images/pickup5.png";
 import work_loundry from "../images/work-laundry.png";
 import side_view from "../images/smiling-girl.jpg";
+import { Helmet } from "react-helmet";
 
 function PickupAndDelivery() {
   return (
     <div className="pickupAndDelivery">
+      <Helmet>
+        <title>Pickup & Delivery Laundry Service in Brooklyn, NY - best price</title>
+        <meta name="description" content="Speedy Fresh Laundry is a laundromat offering laundry & dry cleaning pickup and delivery service in the Brooklyn area, New York for best price!" />
+      </Helmet>
       <Hero
         title="Convenient Pickup & Delivery Services at Speedy Fresh"
         subtitle="Experience Laundry Service Made Easy"

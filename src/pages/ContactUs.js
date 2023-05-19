@@ -7,10 +7,15 @@ import hero_img from "../images/african-american-y.jpg";
 import address from "../images/icon-address.svg";
 import hours from "../images/icon-hours.svg";
 import call from "../images/icon-call.svg";
+import { Helmet } from "react-helmet";
 
 function ContactUs() {
   return (
     <div>
+      <Helmet>
+        <title>Speedy Fresh Laundromat in Brooklyn, NY - address on map, contact us</title>
+        <meta name="description" content="Best Laundry Service near me in Brooklyn, NY: contact us at Speedy Fresh - laundromat address, phone number, map" />
+      </Helmet>
       <Hero title="Contact us" image={hero_img} />
 
       {/* style for map_address is inside map.css  */}

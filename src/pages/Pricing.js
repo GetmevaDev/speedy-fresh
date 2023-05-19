@@ -21,10 +21,15 @@ import clorox from "../images/clorox.png";
 import downy from "../images/Downy.png";
 import seventh from "../images/seventh.png";
 import clock from "../images/clock.png";
+import { Helmet } from "react-helmet";
 
 function Pricing() {
   return (
     <div className="pricing">
+      <Helmet>
+        <title>Best pricing for Laundry in Brooklyn, NY - Speedy Fresh Laundromat</title>
+        <meta name="description" content="Fair cost laundry service in Brooklyn, NY: best price for laundromat service in Brooklyn at Speedy Fresh" />
+      </Helmet>
       <Hero title="How much does laundry cost in NYC?" image={hero_img} />
 
       <CardBanner

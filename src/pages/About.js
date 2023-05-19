@@ -9,9 +9,14 @@ import img1 from "../images/washing-machine-bathroom.jpg";
 import img2 from "../images/washing-machines-laundromatt.jpg";
 import img3 from "../images/woman-using-wm.jpg";
 import img4 from "../images/public-laundry-with.jpg";
+import { Helmet } from "react-helmet";
 function About() {
   return (
     <div>
+      <Helmet>
+        <title>Laundry Service Speedy Fresh Laundromat in Brooklyn, NY - About us</title>
+        <meta name="description" content="Learn about best price laundromat in Brooklyn, NY: Speedy Fresh Laundry Service" />
+      </Helmet>
       <Hero
         title="Speedy Fresh"
         subtitle="Quality Laundry Services in Brooklyn, NY."

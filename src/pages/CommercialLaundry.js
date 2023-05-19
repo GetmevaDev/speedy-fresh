@@ -8,6 +8,7 @@ import singapure_orchard from "../images/singapore-orchard.png";
 import woman_picking from "../images/woman-choosing-clothes.jpg";
 import bucket_loundry from "../images/basket-laundry-near.png";
 import GetInTouch from "../components/GetInTouch";
+import { Helmet } from "react-helmet";
 
 function CommercialLaundry() {
   useEffect(() => {
@@ -17,6 +18,10 @@ function CommercialLaundry() {
   });
   return (
     <div className="commercialLaundry">
+       <Helmet>
+        <title>Commercial Laundry Service in Brooklyn, NY - best price</title>
+        <meta name="description" content="Laundry service for commercial clients in Brooklyn, NY: best commercial Laundry in Brooklyn at Speedy Fresh" />
+      </Helmet>
       <Hero
         title="Commercial Laundry Services in Brooklyn, NY"
         subtitle="Reliable and Efficient Laundry Solutions for Your Business"
