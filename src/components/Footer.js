@@ -3,8 +3,8 @@ import { NavLink } from "react-router-dom";
 import RGM from "../images/RGM.svg";
 import "../css/footer.css";
 
-
 function Footer() {
+ 
 
   return (
     <footer className="footer">
@@ -53,16 +53,22 @@ function Footer() {
 
       <div className="footer__rights">
         <div className="container footer__rights-wrapper">
-        <p>
-          © 2023 <span>Speedy Fresh Laundromat</span> All rights reserved
-        </p>
-        <div className="footer__logo">
-          <img src={RGM} alt="rgm" />
-          <p>Web Design & Digital Marketing by <a href="https://robertgerov.com/" className="rgm">Robert Gerov Media</a> </p>
+          <p>
+            © 2023 <span>Speedy Fresh Laundromat</span> All rights reserved
+          </p>
+          <div className="footer__logo">
+            <img src={RGM} alt="rgm" />
+            <p>
+              Web Design & Digital Marketing by
+              <a href="https://robertgerov.com/" className="rgm">
+                Robert Gerov Media
+              </a>
+            </p>
+          </div>
         </div>
-        </div>
-
       </div>
+
+      
     </footer>
   );
 }
