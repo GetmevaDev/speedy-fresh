@@ -5,12 +5,13 @@ import "../css/address.css";
 import address from "../images/icon-address.svg";
 import hours from "../images/icon-hours.svg";
 import call from "../images/icon-call.svg";
-function AddressCard({ img, title, subtitle }) {
+function AddressCard({ img, title, subtitle, tel }) {
   return (
     <div className="address-card">
       <img src={img} alt={title} />
       <h5>{title} </h5>
-      <h4>{subtitle}</h4>
+      {tel ? <a href="tel:(718)4900334">{tel}</a> :<h4>{subtitle}</h4> }
+      
     </div>
   );
 }
@@ -28,7 +29,7 @@ function Address() {
         <AddressCard
           img={call}
           title="Have a question?"
-          subtitle="(718) 490-0334"
+          tel="(718) 490-0334"
         />
       </div>
     </div>

@@ -31,6 +31,14 @@
 
   color: #ffffff;
 }
+.address-card a {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+
+  color: #ffffff;
+}
 .address-card h5::after {
   content: "";
   display: block;

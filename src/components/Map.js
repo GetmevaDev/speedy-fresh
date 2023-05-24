@@ -13,7 +13,7 @@ function MapContent() {
       </div>
       <div className="mapContent__text">
         <img  src={call} alt="call"/>
-        <span>(718) <b>490-0334</b> </span>
+       <a className="mapContent__tel" href="tel:(718)4900334" > <span>(718) <b>490-0334</b> </span></a> 
       </div>
       <div className="mapContent__text">
         <img  src={hours} alt="hours"/>

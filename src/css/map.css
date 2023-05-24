@@ -47,6 +47,13 @@
 
   color: #ffffff;
 }
+ .mapContent__text .mapContent__tel  {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+
+  color: #ffffff;
+}
 .map_address__img iframe{
   height: 300px;
   width: 100%;

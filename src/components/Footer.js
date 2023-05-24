@@ -4,8 +4,6 @@ import RGM from "../images/RGM.svg";
 import "../css/footer.css";
 
 function Footer() {
- 
-
   return (
     <footer className="footer">
       <ul className="footer__nav">
@@ -68,7 +66,33 @@ function Footer() {
         </div>
       </div>
 
-      
+      <meta property="og:locale" content="en_US" />
+
+      <meta property="og:site_name" content="Speedy Fresh Laundry Service" />
+
+      <meta property="og:type" content="website" />
+
+      <meta
+        property="og:title"
+        content="Speedy Fresh: Professional Laundry Service in Brooklyn, NY: Wash and Fold, Laundry Pick Up and Delivery Service."
+      />
+
+      <meta
+        property="og:description"
+        content="Professional Laundry Pick Up and Delivery Service, wash and fold: new Laundromats at Speedy Fresh Laundry, quick and top-quality service for same day and next day laundry"
+      />
+
+      <meta property="og:url" content="Speedy Fresh Laundromat " />
+
+      <meta
+        property="og:image"
+        content="https://speedyfreshlaundromat.com/static/media/logo.8780194d.svg"
+      />
+
+      <meta
+        property="og:image:secure_url"
+        content="https://speedyfreshlaundromat.com/static/media/logo.8780194d.svg"
+      />
     </footer>
   );
 }
