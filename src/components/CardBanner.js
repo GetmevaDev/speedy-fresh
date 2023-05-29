@@ -17,7 +17,7 @@ function CardBanner({ img, title, paragraph, reverse, listArr }) {
           </ul>}
         </div>
         <div className="aboutBanner__img">
-          <img src={img} alt="wash machine" />
+          <img loading="lazy" src={img} alt="wash machine" />
         </div>
       </div>
     </div>

@@ -12,7 +12,7 @@ function HomePriceBanner() {
           <Link to = "/pricing" className = "btn btn--secondary">See Our Pricing</Link>
         </div>
         <div className="homePriceBanner__image">
-          <img src={BannerImg} alt="washing machine"/>
+          <img loading="lazy" src={BannerImg} alt="washing machine"/>
         </div>
       </div>
 

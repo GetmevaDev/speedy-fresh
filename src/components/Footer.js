@@ -55,7 +55,7 @@ function Footer() {
             © 2023 <span>Speedy Fresh Laundromat</span> All rights reserved
           </p>
           <div className="footer__logo">
-            <img src={RGM} alt="rgm" />
+            <img loading="lazy" src={RGM} alt="rgm" />
             <p>
               Web Design & Digital Marketing by
               <a href="https://robertgerov.com/" className="rgm">

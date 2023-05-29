@@ -11,7 +11,7 @@ import washingMachine6 from "../images/washing-machine6.png";
 function BenefitsCard({ img, title, description }) {
   return (
     <div className="BenefitsCard">
-      <img src={img} alt={title} />
+      <img loading="lazy" src={img} alt={title} />
       <h4>{title}</h4>
       <span>{description}</span>
     </div>
@@ -24,7 +24,7 @@ export default function Benefits() {
       <p className="benefits__subtitle">Experience the Laundry Difference</p>
       <div className="benefitsCard-wrappper container">
         <BenefitsCard
-          img={washingMachine1}
+          img={washingMachine1} 
           title="State-of-the-art Equipment"
           description= "Our modern, high-performance washing machines and dryers are designed to provide you with efficient and effective laundry solutions."
         />

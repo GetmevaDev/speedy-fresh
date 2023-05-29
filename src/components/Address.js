@@ -8,7 +8,7 @@ import call from "../images/icon-call.svg";
 function AddressCard({ img, title, subtitle, tel }) {
   return (
     <div className="address-card">
-      <img src={img} alt={title} />
+      <img loading="lazy" src={img} alt={title} />
       <h5>{title} </h5>
       {tel ? <a href="tel:(718)4900334">{tel}</a> :<h4>{subtitle}</h4> }
       

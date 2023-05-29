@@ -23,7 +23,7 @@ function Hero({ title, subtitle, image }) {
           </div>
         </div>
         <div className="hero__image">
-          <img src={image} alt="hero" />
+          <img loading="lazy" src={image} alt="hero" />
         </div>
       </div>
 

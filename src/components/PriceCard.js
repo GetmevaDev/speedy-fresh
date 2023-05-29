@@ -6,7 +6,7 @@ function PriceCard({title, img, btnText}) {
   return (
     <div className='priceCard'>
         <h4>{title}</h4>
-        <img src={img} alt={title} />
+        <img loading="lazy" src={img} alt={title} />
         <button>{btnText}</button>
     </div>
   )

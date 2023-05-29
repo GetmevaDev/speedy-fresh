@@ -35,7 +35,7 @@ function Header() {
           {current_url.pathname !== "/" && 
          <div className="logo">
           <NavLink to="/" className="logo__link">
-            <img src={Logo} alt="Logo"/>
+            <img loading="lazy" src={Logo} alt="Logo"/>
           </NavLink> 
         </div> }
 

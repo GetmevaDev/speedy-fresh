@@ -9,7 +9,7 @@ function LoundryServiceCard({img, title, paragraph, btnText, recemmended}) {
         <span>Recommended</span>
       </div>
       }
-      <img  src={img} alt={title}/>
+      <img loading="lazy"  src={img} alt={title}/>
       {title && <h4>{title}</h4>}
       {paragraph  && <p>{paragraph}</p>}
       {btnText &&  <button>{btnText}</button>}
