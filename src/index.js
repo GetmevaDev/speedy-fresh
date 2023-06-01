@@ -16,6 +16,7 @@ import ContactUs from "./pages/ContactUs";
 import PageNotFound from "./pages/404";
 import { Provider } from "react-redux";
 import store from "./utils/store";
+import Accessibility from "./components/Accessibility";
 
 const appRouter = createBrowserRouter([
   {
@@ -64,8 +65,13 @@ const appRouter = createBrowserRouter([
         element: <ContactUs />
     
       },
-    ]
+    ],
+    
 
+  },
+  {
+    path:"/accessibility-policy-and-commitment-statement",
+    element:<Accessibility />
   }
 ])
 

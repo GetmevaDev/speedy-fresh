@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import RGM from "../images/RGM.svg";
 import "../css/footer.css";
 
@@ -55,6 +55,7 @@ function Footer() {
             © 2023 <span>Speedy Fresh Laundromat</span> All rights reserved
           </p>
           <div className="footer__logo">
+            <div className="footer__logo-wrapper">
             <img loading="lazy" src={RGM} alt="rgm" />
             <p>
               Web Design & Digital Marketing by
@@ -62,6 +63,9 @@ function Footer() {
                 Robert Gerov Media
               </a>
             </p>
+            </div>
+            
+            <Link className="accessibility-policy" to='/accessibility-policy-and-commitment-statement'>Accessibility Policy and Commitment Statement</Link>
           </div>
         </div>
       </div>
